@@ -12,13 +12,11 @@
 	<h1>Upload completed</h1>
 
 	<div class="result-images">
-		<c:if test="${not empty productImageUrl1 }">
-			<img src="/fileupload${productImageUrl1 }" style="width:150px"><br>
-		</c:if>
+			<img src="${pageContext.request.contextPath}/ ${url1 }" style="width:150px"><br>
 	</div>
 
 	<p>
-		<a href='/fileupload/form'> 다시 업로드 하기 </a>
+		<a href='fileupload/form'> 다시 업로드 하기 </a>
 	</p>
 	
 </body>
